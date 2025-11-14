@@ -221,7 +221,6 @@ def process_battle_base(battle_data, pokedex, stats_map):
     (Bug-fixed, Restored to 40+ features)
     """
     features = {}
-    # Safe Target (handles submission)
     features["player_won"] = battle_data.get("player_won")
     if features["player_won"] is not None:
         features["player_won"] = 1 if features["player_won"] else 0
@@ -246,23 +245,18 @@ def process_battle_base(battle_data, pokedex, stats_map):
     p1_win_rates = [
         stats_map.get(p["name"], {}).get("win_rate_float", 50.0) for p in p1_team
     ]
-    # features['p1_team_avg_win_rate'] = np.mean(p1_win_rates)
 
     meta_count_p1 = sum(1 for p in p1_team if p["name"] in META_POKEMON_SET)
     p1_meta_score = meta_count_p1 / 6.0
-    # features['p1_team_meta_score'] = p1_meta_score
 
     p2_win_rates = [p.get("win_rate_float", 50.0) for p in p2_team_stats_list]
-    # features['p2_team_avg_win_rate'] = np.mean(p2_win_rates)
 
-    # Corrected P2 Meta Score logic
     meta_count_p2 = sum(1 for name in p2_revealed_names if name in META_POKEMON_SET)
     p2_meta_score = meta_count_p2 / len(p2_revealed_names) if p2_revealed_names else 0.0
-    # features['p2_team_meta_score'] = p2_meta_score
 
     features["avg_win_rate_advantage"] = np.mean(p1_win_rates) - np.mean(p2_win_rates)
     features["meta_score_advantage"] = p1_meta_score - p2_meta_score
-    # --- 4. Base Stat Advantages (Restored 6 features) ---
+    # --- 4. Base Stat Advantages ---
     stats_to_avg = [
         "base_hp",
         "base_atk",
@@ -282,7 +276,7 @@ def process_battle_base(battle_data, pokedex, stats_map):
     features["p1_total_fainted"] = p1_ko_count
     features["p2_total_fainted"] = p2_ko_count
 
-    # --- 6. T30 Snapshot Features (Bug-fixed) ---
+    # --- 6. T30 Snapshot Features ---
     last_turn_data = timeline[29]
     p1_last_state = last_turn_data.get("p1_pokemon_state")
     p2_last_state = last_turn_data.get("p2_pokemon_state")
@@ -294,7 +288,7 @@ def process_battle_base(battle_data, pokedex, stats_map):
         p2_last_state.get("hp_pct", 0.0) if p2_last_state else 0.0
     )
 
-    # --- 7. T30 Status (Restored text for get_dummies) ---
+    # --- 7. T30 Status  ---
     features["t30_p1_status"] = (
         p1_last_state.get("status", "ok") if p1_last_state else "ok"
     )
@@ -408,7 +402,6 @@ def create_dataset(data, is_training=True):
     # --- 1. Pre-processing (Build mapping dicts) ---
     if is_training:
         print("Running pre-processing (Training Mode)...")
-        # Populate the global maps using training data
         pokemon_type_map = type_map(data)
         pokemon_stats = pokemon_win_rate(pokemon_type_map, data)
         observed_moves_map, move_to_type_map = build_observed_moveset_map(data)

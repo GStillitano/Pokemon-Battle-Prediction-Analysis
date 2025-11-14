@@ -2,8 +2,9 @@
 ![Can't load the image](images/logo.png)
 
 # FDS 2025 - Pokémon Battle Prediction
-
-This repository contains the source code (toolbox) for the FDS Pokémon Battles Prediction 2025 Kaggle competition.
+Team composition: Giuseppe Stillitano, Edoardo Besteghi, Riccardo Bucchi
+![](images/1_j7dwLFVWjLVRPQFTjMsmgg.jpg)
+This repository contains the source code for the FDS Pokémon Battles Prediction 2025 Kaggle competition.
 
 The goal is to predict the winner of a Pokémon battle (Player 1 vs. Player 2) given the timeline data from the first 30 turns.
 

@@ -1,5 +1,6 @@
 # POKEMABUONI TEAM
 # FDS 2025 - Pokémon Battle Prediction
+Team composition: Giuseppe Stillitano, Edoardo Besteghi, Riccardo Bucchi
 ![](images/1_j7dwLFVWjLVRPQFTjMsmgg.jpg)
 This repository contains the source code for the FDS Pokémon Battles Prediction 2025 Kaggle competition.
 

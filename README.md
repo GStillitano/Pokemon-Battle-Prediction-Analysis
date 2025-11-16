@@ -62,4 +62,4 @@ Its uneven push gives continuous forward motion, making the listener feel that s
 ---
 
 *Pokemabuoni Team – FDS 2025*  
-*(Because data science isn’t the only passion that we have!)*
+*(Because there’s more to us than data science!)*

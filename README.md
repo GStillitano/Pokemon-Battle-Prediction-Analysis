@@ -61,5 +61,5 @@ Its uneven push gives continuous forward motion, making the listener feel that s
 
 ---
 
-*Pokemabuoni Team – FDS 2025*  
+*Pokemabuoni Team – FDS 2025-2026*  
 *(Because there’s more to us than data science!)*

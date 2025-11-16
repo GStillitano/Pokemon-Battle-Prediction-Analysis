@@ -41,3 +41,25 @@ The final notebook trains three distinct models for submission, as required by t
 
 * **`model_pipeline.py`**:
     Contains the three high-level functions (`run_model_1_...`, `run_model_2_...`, `run_model_3_...`) that define, train, and evaluate the final submission models.
+---
+
+## Bonus – *FROM CLASSICAL MUSIC TO FLAMENCO: Pokémon Music*
+
+Many themes in the Pokémon series owe their instantly recognizable character to a blend of musical elements that, at first glance, seem to come from entirely different worlds.  
+One of the most evident choices is the use of the **Phrygian mode**, a minor scale with a tense, dramatic color strongly associated with *flamenco*.  
+This modal flavor creates a sense of urgency and motion that suits the game’s atmosphere of exploration and combat.
+
+Alongside this, the music often features the so-called **“cascade of semitones,”** a rapid chromatic descent.  
+This device, far from modern, is a classical trick for building tension—famously used in *The Flight of the Bumblebee*, where dense semitone motion generates unstoppable energy.  
+In Pokémon, it serves a similar purpose: **accelerating the musical pulse** and amplifying the sense of action on screen.
+
+The third pillar is the **tresillo**, an Afro-Cuban rhythmic pattern based on syncopation.  
+Now found everywhere—from pop to jazz (as in *Un Poco Loco Jazz Orchestra*)—it appears in several battle themes.  
+Its uneven push gives continuous forward motion, making the listener feel that something is always about to happen.
+
+> 🎵 Together, these musical choices turn Pokémon battles into living, breathing performances—mirroring the adrenaline of real competition.
+
+---
+
+*Pokemabuoni Team – FDS 2025*  
+*(Because data science isn’t the only passion that we have!)*

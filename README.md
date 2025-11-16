@@ -63,6 +63,8 @@ Its uneven push gives continuous forward motion, making the listener feel that s
 ---
 
 <p align="center">
+  <img src="images/pokemon_music.avif" alt="Pokémon Music Bonus" width="600"/><br><br>
+
   <audio controls>
     <source src="images/musicapokemon.mp3" type="audio/mpeg">
     🎧 <a href="https://github.com/GiuseppeStilly/Pokemabuoni-FDS-PokemonChallenge/raw/main/images/musicapokemon.mp3">
@@ -71,8 +73,11 @@ Its uneven push gives continuous forward motion, making the listener feel that s
   </audio>
   <br>
   <em>Pokémon Battle Theme – Bonus Audio</em>
+  <br><br>
+  🔗 <a href="https://youtu.be/436SxbLz-OA?si=iGnPjCX-h2FnmCDX" target="_blank">
+    Watch on YouTube
+  </a>
 </p>
-
 
 
 ---

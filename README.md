@@ -63,12 +63,14 @@ Its uneven push gives continuous forward motion, making the listener feel that s
 ---
 
 <p align="center">
-  <a href="https://youtu.be/436SxbLz-OA?si=iGnPjCX-h2FnmCDX">
-    <img src="https://img.youtube.com/vi/436SxbLz-OA/maxresdefault.jpg" alt="Watch on YouTube" width="500"/>
-  </a>
+  <audio controls>
+    <source src="images/musicapokemon.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
   <br>
-  <em>Watch the musical reference on YouTube</em>
+  <em>Pokémon Battle Theme – Bonus Audio</em>
 </p>
+
 
 ---
 

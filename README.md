@@ -1,4 +1,4 @@
-#FDS 2025 - Pokémon Battle Prediction
+# FDS 2025 - Pokémon Battle Prediction
 
 # Predictive Modeling for Strategic Battle Outcomes
 Team composition: Giuseppe Stillitano, Edoardo Besteghi, Riccardo Bucchi
